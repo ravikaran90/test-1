@@ -1,6 +1,6 @@
 def twosum(arr,t):
     diction={}
-    for i in range(len(nums)):
+    for i in range(len(arr)):
         compl=abs(t-arr[i])
         if compl in diction:
             return [diction[compl],i]
