@@ -1,4 +1,4 @@
-def twosum(nums,target):
+def twosum(arr,target):
     diction={}
     for i in range(len(nums)):
         compl=abs(target-nums[i])
@@ -7,9 +7,9 @@ def twosum(nums,target):
         diction[nums[i]]=i
 
 def main():
-    nums=[1,4,7,8,10,15]
-    target=14
-    indices=twosum(nums,target)
+    arr=[1,3,7,8,10,15]
+    target=25
+    indices=twosum(arr,target)
     print("Indices:",indices)
 
 if __name__=="__main__":
