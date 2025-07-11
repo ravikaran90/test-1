@@ -1,10 +1,10 @@
 def twosum(arr,t):
     diction={}
     for i in range(len(nums)):
-        compl=abs(target-nums[i])
+        compl=abs(t-arr[i])
         if compl in diction:
             return [diction[compl],i]
-        diction[nums[i]]=i
+        diction[arr[i]]=i
 
 def main():
     arr=[1,2,7,8,10,15]
